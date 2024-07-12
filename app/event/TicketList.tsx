@@ -1,6 +1,5 @@
 import React from "react";
 import TicketCard from "./TicketCard";
-import Container from "@/components/Container";
 
 const EventList = () => {
   const events = [
@@ -71,18 +70,16 @@ const EventList = () => {
   ];
 
   return (
-    <Container>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 bg-gray-950">
-        {events.map((event, index) => (
-          <TicketCard
-            key={index}
-            title={event.title}
-            price={event.price}
-            description={event.description}
-          />
-        ))}
-      </div>
-    </Container>
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6 bg-gray-950">
+      {events.map((event, index) => (
+        <TicketCard
+          key={index}
+          title={event.title}
+          price={event.price}
+          description={event.description}
+        />
+      ))}
+    </div>
   );
 };
 

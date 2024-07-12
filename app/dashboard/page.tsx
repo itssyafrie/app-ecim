@@ -13,15 +13,18 @@ const Dashboard = () => {
             <Link href={"/"}>
               <Logo />
             </Link>
-            <Button variant="outline" className="border-white">
+            <Button
+              variant="outline"
+              className="border-gray-500 border-[0.5px]"
+            >
               <Menu color="white" />
             </Button>
           </div>
         </Container>
       </div>
 
-      <div className="flex flex-row h-screen border-t-[1px] border-gray-700">
-        <div className="flex flex-col p-8 text-white bg-gray-800 border-r-[1px] border-gray-700 gap-y-2">
+      <div className="flex flex-row h-screen border-t-[0.5px] border-gray-500">
+        <div className="flex flex-col p-8 text-white border-r-[0.5px] border-gray-500 gap-y-2">
           <Button
             variant="default"
             className="hover:bg-gray-950 text-md font-normal flex gap-x-3 items-start justify-start"
